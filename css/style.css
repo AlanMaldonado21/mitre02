@@ -420,8 +420,10 @@ hr {
   }
 }
 .contacto {
-  margin: 15px;
+  border-top: 1.5px solid black;
+  padding: 25px;
   color: #402B27 !important;
+  background-image: url("../b-fotter.png");
 }
 .contacto h2 {
   color: #402B27;
