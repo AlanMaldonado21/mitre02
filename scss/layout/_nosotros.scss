@@ -1,0 +1,103 @@
+.nosotros{
+    margin: 10px;
+    div:first-child{
+       
+        h2{
+            font-family: "Museo", Sans-serif !important;
+            color: #402B27;
+            font-weight: bold;
+            font-size: 2rem;
+            letter-spacing: 16;
+            margin: 15px 0;
+        }
+        p{
+            color: #402B27;
+            word-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        a{
+            color: white;
+            background-color: #F5751F;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    }
+
+    div:last-child{
+        margin-top: 35px;
+        img:first-child{
+            width: 100%;
+        }
+        div{ 
+
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 14px;
+               
+            }
+            img{
+                width: 4rem;
+                align-self: flex-start;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+hr{
+    height: 1.5px;
+    background-color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .nosotros{
+        display: flex;
+        gap: 25px;
+        margin: 25px;
+        justify-content: space-between;
+        div:first-child{
+     
+           width: 50%;
+            h2{
+                color: #402B27;
+                margin: 15px 0;
+            }
+            p{
+                color: #402B27;
+                word-spacing: 3px;
+                margin-bottom: 25px;
+            }
+    
+            a{
+                color: white;
+                background-color: #F5751F;
+                padding: 15px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        }
+    
+        div:last-child{
+            margin-top: 35px;
+            img:first-child{
+                width: 100%;
+            }
+            div{    
+                display: flex;
+                align-items: center;
+                p{
+                    font-size: 14px;
+                   
+                }
+                img{
+                    width: 4rem;
+                }
+            }
+        }
+    }
+    
+}

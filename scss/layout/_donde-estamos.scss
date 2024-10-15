@@ -1,0 +1,71 @@
+.maps {
+    iframe{
+        padding: 15px;
+        background-color: #F5751F;
+        border: 1px solid black;
+        width: 100%;
+        height: 300px !important;
+    }
+    .donde-estamos{
+        color: #402B27;
+        margin: 15px 35px ;
+        display: flex;
+        flex-direction: column;
+        div:first-child{
+            padding: 0 25px;
+            img{
+                position: absolute;
+                left: 15px ;
+                width: 45px !important;
+            }
+        }
+        div:nth-child(2){
+            margin: 15px 0;
+        }
+        p{
+            margin: 5px 0;
+        }
+       
+    }
+
+    div img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .maps{
+       
+        iframe{
+            padding: 0;
+            height: 380px;
+            border-top: 4px solid #F5751F;
+            border-bottom: 4px solid #F5751F;
+            background-color: #F9EAD6;
+        }
+
+        .donde-estamos{
+            color: #402B27;
+            margin: 15px 35px ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            div:first-child{
+                padding: 0 25px;
+                img{
+                    position: absolute;
+                    left: 45px ;
+                    width: 45px !important;
+                }
+            }
+            div:nth-child(2){
+                margin: 15px 0;
+            }
+            p{
+                margin: 5px 0;
+            }
+           
+        }
+    }
+}
+

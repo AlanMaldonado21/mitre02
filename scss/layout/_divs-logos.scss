@@ -1,0 +1,28 @@
+.logos{
+    .logo-flotante-1{
+        position: fixed;
+
+        bottom: 25px;
+        right: 25px;
+        width: 60px;
+        transition: 2s;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+
+   
+    .logo-flotante-2{
+        position: fixed;
+        bottom: 25px;
+        left: 25px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .logo-flotante-2{
+      display: none;
+    }
+}

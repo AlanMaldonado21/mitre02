@@ -1,0 +1,193 @@
+.contacto {
+    margin: 15px;
+    color: #402B27 !important;
+    
+
+    h2 {
+        color: #402B27;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        input {
+            border: 0;
+            padding: 5px;
+        }
+
+        label {
+            margin: 5px !important;
+        }
+
+        button {
+            color: white;
+            background-color: #FD7C0F;
+            padding: 5px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            width: 100px;
+            margin: 15px 0;
+            border: 0;
+        }
+    }
+
+    .contacto-derecho {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #402B27;
+  }
+  nav ul li ul{
+      padding: 10px;
+  }
+
+  nav ul li ul li a {
+    padding: 10px;
+    color: #f9ead6;
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #777;
+  }
+
+
+  @media (min-width: 1024px) {
+    .li {
+        display: inline-block;
+    }
+
+    /* Asegura que el submenú esté alineado correctamente bajo "Productos" */
+    #submenu {
+        height: 90px;
+        top: 70px; /* Asegura que aparezca justo debajo del botón */
+        left: 46%;
+        position: absolute;
+        background-color: #402B27; /* Color del fondo del submenú */
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .contacto {
+        p{
+            font-size: 17px !important;
+        }
+        form{
+            width: 80%;
+        }
+        display: flex;
+        justify-content: space-around;
+        div:first-child {
+
+            width: 50%;
+        }
+
+        .contacto-derecho {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            div:nth-child(1) {
+                width: 100%;
+
+                a {
+                    color: #402B27;
+                    margin-left: 10px;
+                }
+            }
+
+            .container-item:nth-child(2) {
+                display: flex;
+
+                img {
+                    align-self: flex-start;
+                }
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 15px;
+                        margin: -1px 0 0 15px;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+
+            .container-item:nth-child(3) {
+                display: flex;
+                align-items: center;
+
+                img {
+                    align-self: flex-start;
+                }
+
+                div {
+                    text-align: start;
+
+                    p {
+                        margin-left: 15px;
+                        margin-bottom: -1px;
+                    }
+
+                    ul {
+                        text-align: start;
+                        margin-left: -10px;
+                        margin-bottom: -1px;
+                    }
+                }
+            }
+
+            .box-4 {
+                display: flex;
+                align-items: center;
+
+                img {
+                    align-self: flex-start;
+                }
+
+                div {
+                    text-align: start;
+
+                    p {
+                        margin-left: 15px;
+                        margin-bottom: -1px;
+                    }
+
+                    ul {
+                        text-align: start;
+                        margin-left: -10px;
+                        margin-bottom: -1px;
+                    }
+                }
+            }
+
+            .button{
+                color: white;
+                background-color: #FD7C0F;
+                padding: 10px 25px;
+                border-radius: 5px;
+                text-decoration: none;
+                width: 100px;
+                margin: 25px 0;
+                border: 0;
+            }
+        }
+        .barra{
+            display: flex;
+            margin-right: 55px;
+            background-color: black;
+            border: 1px solid black;
+        }
+    }
+
+}

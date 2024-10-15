@@ -1,0 +1,86 @@
+.nuestros-servicios{
+    margin-top: 45px;
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    
+        .card {
+            border: 1px solid #402B27;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
+            -webkit-box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
+            -moz-box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
+            width: 275px;
+            height: 350px;
+            margin: auto;
+            p{
+                color: #402B27;
+                text-align: center;
+                margin: 0 auto;
+            }
+            h2{
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+            }
+            img {
+                width: 4rem;
+               
+            }
+            a{
+                color: white;
+                background-color: #F5751F;
+                padding: 5px 25px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    
+    
+    @media only screen and (min-width: 1024px) {
+        .cards {
+            margin: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch; /* Alinea todas las tarjetas al mismo alto */
+            gap: 15px;
+        }
+    
+        .card {
+            width: 275px;
+            height: 350px;
+            margin: auto;
+            p{
+                color: #402B27;
+                text-align: center;
+                margin: 0 auto;
+            }
+            h2{
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                font-size: 16px;
+            }
+            img {
+                width: 4rem;
+    
+            }
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

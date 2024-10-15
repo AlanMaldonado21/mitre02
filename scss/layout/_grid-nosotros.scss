@@ -1,0 +1,103 @@
+.nosotros-flex{
+    margin-top: 60px !important;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    div:first-child{
+        width: 280px;
+        img{
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    div:nth-child(2){
+        width: 250px;
+        align-self: center;
+        h6{
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-size: 13px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    div:last-child{
+        width: 300px;
+        img{
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    .img-mid{
+        width: 300px !important;
+        img{
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    .left{
+        align-self: center;
+        h6{
+            text-align: center;
+            font-weight: bold;
+        }
+        p{
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+// display: grid;
+// justify-content: center;
+// border: 1px solid black;
+// grid-template-columns: repeat(3, 1fr);
+// grid-template-rows: repeat(2, 300px);
+// grid-template-areas: 
+// "camion texto foto"
+// "stock imagen calidad";
+
+// .item-grid{
+//     background-color: red;
+//     border: 1px solid blue;
+// }
+
+// div:nth-child(1){
+//     background-color: blue;
+//     grid-area: camion;
+//     img{
+//         width: 100%;
+//     }
+// }
+// div:nth-child(2){
+//     background-color: yellow;
+//     grid-area: texto;
+// }
+// div:nth-child(3){
+//     background-color: purple;
+//     grid-area: foto;
+// }
+// div:nth-child(4){
+//     background-color: green;
+//      grid-area: stock;
+// }
+// div:nth-child(5){
+//     grid-area: imagen;
+//     background-color: gray;
+// } 
+// div:nth-child(6){
+//     grid-area: calidad;
+//     background-color: red;
+// }
+

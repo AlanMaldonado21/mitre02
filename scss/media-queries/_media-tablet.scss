@@ -1,0 +1,180 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header {
+        img {
+            width: 7rem;
+        }
+
+        .ul {
+            display: flex;
+            flex-flow: row;
+            list-style-type: none;
+
+            .li {
+                margin: 0 .5em;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+    }
+
+
+    body {
+        .section-cabecera {
+            background-image: url('../assets/home2.png') !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Utiliza 'cover' para que la imagen cubra todo el contenedor */
+            background-position: center center;
+            /* Centra la imagen */
+            height: 300px;
+            /* Ajusta la altura según tus necesidades */
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.2;
+                width: 50%;
+                color: white;
+                font-weight: 100 !important;
+                // margin-left: 25px; 
+                padding-top: 50px;
+                margin-left: 15px;
+                margin-right: 25px;
+            }
+
+            .boton {
+                background-color: white;
+                color: black;
+                padding: 15px 5px;
+                font-size: 14px;
+                margin: 20px 15px;
+                display: block;
+                width: 25%;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+
+            }
+        }
+
+        .section-nosotros {
+            display: flex;
+            align-items: center;
+            .container-nosotros-div {
+                color: white;
+                width: 50%;
+                h2 {
+                    margin: 16px;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin: 16px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                .boton {
+                    color: #784A1C;
+                    width: 50%;
+                    padding: 10px 0;
+                    font-size: 16px;
+                }
+            }
+
+            div {
+
+                img {
+                    margin: 16px;
+                    width: 90%;
+                }
+            }
+        }
+
+    }
+
+
+    main {
+    
+        .section-maquinas{
+           h3{
+               color: white;
+               margin: 25px;
+               margin-bottom: 10px;
+           }
+           p{
+            margin: 25px;
+            margin-bottom: 10px;
+            color: white;
+           }
+    
+           .container-img-maquina{
+    
+               img{
+                   margin-left: 75px;
+                   width: 50%;
+               }
+           }
+        }
+    }main {
+    
+    .section-maquinas{
+       h3{
+           color: white;
+           margin: 25px;
+           margin-bottom: 10px;
+       }
+       p{
+        margin: 25px;
+        margin-bottom: 10px;
+        color: white;
+       }
+
+       .container-img-maquina{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+           img{
+               width: 19% !important;
+           }
+           img:nth-child(1){
+
+            display: none;
+           }
+       }
+       margin-bottom: 25px;
+    }
+}
+
+main {
+    
+    .section-productos{
+        display: flex;
+        margin-bottom: 25px;
+        h3{
+           color: white;
+           margin: 25px;
+           margin-bottom: 10px;
+       }
+       p{
+        margin: 25px;
+        margin-bottom: 10px;
+        color: white;
+       }
+
+       .container-img-productos{
+
+           img{
+               width: 100%;
+           }
+       }
+    }
+}
+}

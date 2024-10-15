@@ -1,0 +1,215 @@
+.novedades {
+    margin: 35px;
+    border-radius: 5px;
+    padding: 25px;
+    background: rgb(245, 117, 31);
+    background: -moz-linear-gradient(288deg, rgba(245, 117, 31, 1) 0%, rgba(64, 43, 39, 1) 81%);
+    background: -webkit-linear-gradient(288deg, rgba(245, 117, 31, 1) 0%, rgba(64, 43, 39, 1) 81%);
+    background: linear-gradient(288deg, rgba(245, 117, 31, 1) 0%, rgba(64, 43, 39, 1) 81%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5751f", endColorstr="#402b27", GradientType=1);
+    color: white;
+
+    div {
+        a {
+            color: white;
+            background-color: #F5751F;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+.pagos {
+    background-color: white;
+    margin: 35px;
+    padding: 25px;
+    border-radius: 5px;
+
+    .items-pago {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: 25px 0;
+            margin-right: 15px;
+        }
+
+        img:last-child {
+            margin: 25px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .novedades {
+        margin: 35px;
+        border-radius: 5px;
+        padding: 25px;
+        background: rgb(64, 43, 39);
+        background: linear-gradient(277deg, rgba(64, 43, 39, 0.9500393907563025) 10%, rgba(245, 117, 31, 1) 68%);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            a {
+                color: white;
+                background-color: #F5751F;
+                padding: 15px 25px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .pagos {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        margin: 35px;
+        padding: 25px;
+        border-radius: 5px;
+
+        .items-pago {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 25px 0;
+                margin-right: 15px;
+            }
+
+            img:last-child {
+                margin: 25px 0;
+            }
+        }
+    }
+
+}
+
+
+.nosotros-novedades {
+    margin: 35px 25px;
+    div:first-child {
+
+        h2 {
+            color: #402B27;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        p {
+            color: #402B27;
+            word-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: white;
+            background-color: #F5751F;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    }
+
+    div:last-child {
+        margin-top: 35px;
+
+        img:first-child {
+            width: 100%;
+        }
+
+        div {
+
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 14px;
+
+            }
+
+            img {
+                width: 4rem;
+                align-self: flex-start;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+hr {
+    height: 1.5px;
+    background-color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .nosotros-novedades {
+        display: flex;
+        gap: 25px;
+        margin: 35px;
+        justify-content: space-between;
+
+        div:first-child {
+
+            width: 50%;
+
+            h2 {
+                color: #402B27;
+                margin: 15px 0;
+            }
+
+            p {
+                color: #402B27;
+                word-spacing: 3px;
+                margin-bottom: 25px;
+            }
+
+            a {
+                color: white;
+                background-color: #F5751F;
+                padding: 15px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        }
+
+        div:last-child {
+            margin-top: 35px;
+
+            img:first-child {
+                width: 100%;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-size: 14px;
+
+                }
+
+                img {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+
+}
+
+.recomendaciones {
+    padding: 25px;
+    background-color: #402B27;
+
+    div {
+        img {}
+    }
+}

@@ -1,0 +1,126 @@
+.header {
+  width: 100%;
+  background-color: #FAEBD6;
+  position: sticky;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #402B27;
+
+  .button {
+    /* background-color: crimson; */
+    display: none;
+  }
+
+  .ul {
+    display: flex;
+    flex-flow: row;
+
+    .a {
+      margin-top: 15px;
+      color: #402B27;
+    }
+
+    .li {
+      margin: 0 .5em;
+    }
+
+    .bna {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      img {
+        margin-right: 15px;
+        width: 35px;
+      }
+
+      a {
+        color: #402B27;
+      }
+    }
+  }
+
+  img {
+    width: 8rem;
+  }
+
+  .dolar-nacion{
+    display: none;
+  }
+
+}
+
+
+.bars__menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.bars__menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #F5751F;
+  margin-top: 6px;
+  transform-origin: 0px 100%;
+  transition: all 300ms;
+}
+
+.activeline1__bars-menu {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__bars-menu {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+  transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+
+@media only screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 35px;
+    align-items: flex-start !important;
+  }
+
+  header ul .bna {
+    display: none !important;
+  }
+
+  header ul {
+    list-style-type: none;
+    height: 50px;
+    align-items: flex-end;
+  }
+
+  header ul li a {
+    text-decoration: none;
+  }
+
+  header .dolar-nacion {
+    position: relative;
+    top: 16px;
+    display: block !important;
+    align-items: flex-start;
+    img {
+      width: 45px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #402B27;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.productos-relacionados{
+    margin-top: 35px;
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 35px;
+    }
+}
+.cards-desta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    .card {
+        padding: 15px;
+        border: 1px solid #402B27;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
+        -webkit-box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
+        -moz-box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
+        width: 305px;
+        height: 450px;
+        margin: auto;
+        p{
+            color: #402B27;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+           
+        }
+        a{
+            color: white;
+            background-color: #F5751F;
+            padding: 5px 45px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.maps{
+    margin: 35px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards-desta {
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch; /* Alinea todas las tarjetas al mismo alto */
+        gap: 15px;
+    }
+
+    .card {
+        width: 275px;
+        height: 350px;
+        margin: auto;
+        p{
+            color: #402B27;
+            text-align: center;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+        img {
+            width: 4rem;
+
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

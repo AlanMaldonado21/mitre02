@@ -1,0 +1,75 @@
+.opiniones{
+    font-weight: bold;
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #3F241A;
+    .titulo-opiniones{
+        h5{
+            font-weight: bold;
+            color: #F9EAD6 !important;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 150px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300 !important;
+            color: #F9EAD6 !important;
+        }
+    }
+
+    .container-comentarios{
+        .comentario{
+            padding: 15px;
+            border-radius: 5px;
+            background-color: white;
+            margin: 20px 0;
+            .img-name{
+                img{
+                    width: 50px;
+                }
+                display: flex;
+                align-items: center;
+                  div{
+                      display: flex;
+                      flex-direction: column;
+                    span{
+                        margin-left: 15px;
+                    }   
+                    a{
+                        color: rgb(57, 57, 57);
+                        font-weight: normal;
+                        text-decoration: none;
+                        font-size: 14px;
+                        margin-left: 15px;
+                    }
+                  }   
+            }
+        }
+        p{
+            margin: 10px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    
+    .opiniones{
+        .container-comentarios{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+           
+            .comentario{
+            width: 45%;
+   
+            }
+
+        }
+    }
+
+
+}
