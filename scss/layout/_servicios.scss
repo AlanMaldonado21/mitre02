@@ -8,7 +8,7 @@
     
         .card {
             border: 1px solid #402B27;
-            background-color: white;
+            background-color: #f4eadd;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -19,6 +19,9 @@
             width: 275px;
             height: 350px;
             margin: auto;
+            &:hover{
+                opacity: 0.9;
+            }
             p{
                 color: #402B27;
                 text-align: center;

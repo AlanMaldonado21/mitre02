@@ -18,11 +18,12 @@
     }
     .header .nav.activo{
       display: block; 
-      height: 32vh;
+      height: 42vh;
       pointer-events: auto;
       margin-bottom: 25px;
     }
     .header .ul{
+      margin-top: 15px;
       flex-direction: column;
       list-style-type: none;
     }

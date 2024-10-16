@@ -141,11 +141,12 @@ h1, h2 {
   }
   .header .nav.activo {
     display: block;
-    height: 32vh;
+    height: 42vh;
     pointer-events: auto;
     margin-bottom: 25px;
   }
   .header .ul {
+    margin-top: 15px;
     flex-direction: column;
     list-style-type: none;
   }
@@ -467,7 +468,7 @@ nav ul li ul {
 
 nav ul li ul li a {
   padding: 10px;
-  color: #f9ead6;
+  color: #402B27 !important;
 }
 
 nav ul li ul li a:hover {
@@ -958,7 +959,7 @@ footer p {
 }
 .nuestros-servicios .cards .card {
   border: 1px solid #402B27;
-  background-color: white;
+  background-color: #f4eadd;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -969,6 +970,9 @@ footer p {
   width: 275px;
   height: 350px;
   margin: auto;
+}
+.nuestros-servicios .cards .card:hover {
+  opacity: 0.9;
 }
 .nuestros-servicios .cards .card p {
   color: #402B27;
