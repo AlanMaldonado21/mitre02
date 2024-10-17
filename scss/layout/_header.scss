@@ -23,6 +23,10 @@
     .a {
       margin-top: 15px;
       color: #402B27;
+      transition: 1s;
+      &:hover{
+        margin: 10px;
+      }
     }
 
     .li {
@@ -124,3 +128,68 @@
     }
   }
 }
+
+/* Estilo para las imágenes del carrusel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 10s ease; /* Zoom gradual durante 10 segundos */
+
+  filter: brightness(60%);
+
+}
+/* Estilo para el contenedor */
+.zoom-container {
+  width: 300px;
+  height: 200px;
+  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+  position: relative;
+}
+
+/* Estilo para la imagen */
+.zoom-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 5s ease; /* La animación de zoom durará 5 segundos */
+}
+
+/* Zoom cuando el usuario pasa el mouse */
+.zoom-container:hover img {
+  transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
+}
+/* Ajustes específicos para mobile */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px; /* Fija la altura a 400px en mobile */
+    object-fit: cover; /* Asegura que la imagen cubra bien el espacio */
+  }
+}
+
+/* Ajustes para desktop */
+@media (min-width: 769px) {
+  .carousel-item img {
+    height: 600px; /* Fija la altura a 600px en desktop */
+  }
+}
+
+
+ /* Ajustes para el texto en el carrusel */
+ .carousel-caption {
+  bottom: 20px; /* Ajusta la posición vertical del texto */
+  z-index: 10;  /* Asegura que el texto esté sobre la imagen */
+}
+
+/* Ajustes para la visibilidad del texto en mobile */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px; /* Texto más pequeño en mobile */
+    padding: 10px; /* Añade relleno para mejor legibilidad */
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-caption {
+    font-size: 24px; /* Texto más grande en desktop */
+  }
+}
+

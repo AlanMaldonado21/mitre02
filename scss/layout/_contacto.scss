@@ -55,7 +55,7 @@
   }
   
   nav ul li ul li a:hover {
-    background-color: #777;
+    margin: 2px;
   }
 
 
@@ -69,8 +69,15 @@
         height: 90px;
         top: 70px; /* Asegura que aparezca justo debajo del botón */
         left: 46%;
+        width: 200px;
         position: absolute;
         background-color: #402B27; /* Color del fondo del submenú */
+        li{
+            a{
+                transition: 1s;
+                color: #FAEBD6 !important;
+            }
+        }
     }
 }
 
