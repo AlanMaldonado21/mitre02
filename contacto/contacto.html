@@ -45,6 +45,8 @@
                         <li><a href="../productos/laminado-en-caliente.html">Laminado en caliente</a></li>
                         <li><a href="../productos/laminado-frio.html">Laminado en frio</a></li>
                         <li><a href="../productos/galvanizada.html">Galvanizada</a></li>
+                        <li><a href="../productos/rayada.html">Rayada</a></li>
+                        <li><a href="../productos/antideslizante.html">Antideslizante</a></li>
                     </ul>
                 </li>
                 <li class="li"><a href="../novedades/novedades.html" class="a">Novedades</a></li>
@@ -68,9 +70,9 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../img/banners/imagen2.jpg   " class="d-block w-100 img-fluid" alt="...">
+                <img src="../img/banners/nosotros-car.jpg " class="d-block w-100 img-fluid zoom-img" alt="...">
                 <div class="carousel-caption  d-md-block">
-                  <h5 class="animate__animated animate__fadeInUp">Contáctanos y trabajemos juntos para llevar tus ideas al siguiente nivel. Estamos  para acompañarte en cada paso del camino hacia el éxito.</h5>
+                  <h5 class="animate__animated animate__fadeInUp hfive">Contáctanos y trabajemos juntos para llevar tus ideas al siguiente nivel. Estamos  para acompañarte en cada paso del camino hacia el éxito.</h5>
                 </div>
               </div>        
             </div>
@@ -80,24 +82,24 @@
 
         <div>
             <h2>Contactanos</h2>
-            <form action="#">
-                <label for="#">Nombre</label>
-                <input type="text">
-
-                <label for="#">Apellido</label>
-                <input type="text">
-
-                <label for="#">Email</label>
-                <input type="text">
-
-                <label for="#">Teléfono</label>
-                <input type="text">
-
-                <label for="#">Mensaje</label>
-                <input type="text">
-
-                <button>Enviar</button>
-            </form>
+            <form action="../send_mail.php" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            
+                <button type="submit">Enviar</button>
+              </form>
         </div>
         <div class="barra"></div>
 
@@ -170,14 +172,17 @@
 
         <div class="donde-estamos">
             <div>
-                <img src="../img/point.png" alt="point" class="point">
+                
                 <div>
+                    <img src="../img/point.png" alt="point" class="">
                     <h4><strong>Sucursal Alvear</strong> </h4>
                     <p>Ventas por mayor y menor, cortes y planchado de bobina
                     </p>
                     <p>Av. Alvear 2518, Jose Ingenieros - Bs.As</p>
                 </div>
+                
                 <div>
+                    <img src="../img/point.png" alt="point" class="">
                     <h4><strong>Sucursal Mitre </strong></h4>
                     <p>Cortes y plegados a medida
                     </p>

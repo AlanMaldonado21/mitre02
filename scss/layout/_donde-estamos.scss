@@ -20,6 +20,8 @@
             }
         }
         div:nth-child(2){
+            padding: 0 25px;
+
             margin: 15px 0;
         }
         p{
@@ -52,6 +54,7 @@
             justify-content: space-around;
             div:first-child{
                 padding: 0 25px;
+
                 img{
                     position: absolute;
                     left: 45px ;
@@ -59,7 +62,8 @@
                 }
             }
             div:nth-child(2){
-                margin: 15px 0;
+                padding: 0 25px;
+
             }
             p{
                 margin: 5px 0;

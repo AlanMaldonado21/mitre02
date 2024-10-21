@@ -41,6 +41,8 @@
                         <li><a href="laminado-en-caliente.html">Laminado en caliente</a></li>
                         <li><a href="laminado-frio.html">Laminado en frio</a></li>
                         <li><a href="galvanizada.html">Galvanizada</a></li>
+                        <li><a href="rayada.html">Rayada</a></li>
+                        <li><a href="antideslizante.html">Antideslizante</a></li>
                     </ul>
                 </li>
                 <li class="li"><a href="../novedades/novedades.html" class="a">Novedades</a></li>
@@ -83,7 +85,7 @@
                 <p><strong>Peso por paquete:</strong> Conforme a los requerimientos del cliente</p>
             </div>
             <div class="grid-item i-7">
-                <a href="https://docs.google.com/document/d/1SxaVgoCKu-BWNFiX2zPAMwKHSNzTHPrx" target="_blank">Especificaciones técnicas</a>
+                <a href="https://docs.google.com/document/d/1SxaVgoCKu-BWNFiX2zPAMwKHSNzTHPrx" target="_blank">Especificaciones Técnicas</a>
             </div>
             <div class="grid-item i-8">
                 <a href="#">Solicitar una Cotización</a>
@@ -100,7 +102,7 @@
             </div>
             <div class="botones">
                 <a href="#">Solicitar una Cotización</a>
-                <a href="https://docs.google.com/document/d/1SxaVgoCKu-BWNFiX2zPAMwKHSNzTHPrx" target="_blank">Especificaciones técnicas</a>
+                <a href="https://docs.google.com/document/d/1SxaVgoCKu-BWNFiX2zPAMwKHSNzTHPrx" target="_blank">Especificaciones Técnicas</a>
             </div>
             <div class="line"></div>
             <div class="especificaciones">
@@ -120,7 +122,7 @@
             </div>
             <div class="especificaciones-2">
                 <div>
-                    <h3>Especificaciones técnicas</h3>
+                    <h3>Especificaciones Técnicas</h3>
                     <a href="https://docs.google.com/document/d/1R_Zu2MuKaKpwOtiakvxtxbk85jpOuIw8/edit"
                         class="boton-naranja"> Ver </a>
 
@@ -129,13 +131,13 @@
         </section>
 
         <section class="productos-relacionados">
-            <h2>Productos relacionados</h2>
+            <h2>Productos Relacionados</h2>
             <div class="cards-desta" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card">
                     <div>
                         <img src="../img/productos/HojaEntera.jpg" alt="logo camion">
                     </div>
-                    <h2>Laminado caliente</h2>
+                    <h2>Laminado Caliente</h2>
                     <p> Se utiliza en estructuras de construcción, tuberías, rieles y piezas automotrices, donde no se
                         requiere alta precisión en las dimensiones.</p>
                     <div>
@@ -189,7 +191,7 @@
 
         <section class="nosotros-flex">
             <div class="left">
-                <h6>Stock permanente</h6>
+                <h6>Stock Permanente</h6>
                 <p>Nuestra planta está equipada con la maquinaria necesaria para proveer entregas a medida para
                     cualquier tipo de necesidad. </p>
             </div>
@@ -213,23 +215,26 @@
 
             <div class="donde-estamos">
                 <div>
-                    <img src="../img/point.png" alt="point" class="point">
+                    
                     <div>
+                        <img src="../img/point.png" alt="point" class="">
                         <h4><strong>Sucursal Alvear</strong> </h4>
                         <p>Ventas por mayor y menor, cortes y planchado de bobina
                         </p>
                         <p>Av. Alvear 2518, Jose Ingenieros - Bs.As</p>
                     </div>
+                    
                     <div>
+                        <img src="../img/point.png" alt="point" class="">
                         <h4><strong>Sucursal Mitre </strong></h4>
                         <p>Cortes y plegados a medida
                         </p>
                         <p>Av. Mitre 3791, Caseros - Bs.As</p>
                     </div>
                 </div>
-
+    
                 <div>
-                    <img src="../img/fotos-m-agua/4.png" alt="hombres trabajando">
+                    <img src="../img/deposito-work.png" alt="hombres trabajando">
                 </div>
         </section>
 
@@ -238,24 +243,24 @@
 
             <div>
                 <h2>Contactanos</h2>
-                <form action="#">
-                    <label for="#">Nombre</label>
-                    <input type="text">
-
-                    <label for="#">Apellido</label>
-                    <input type="text">
-
-                    <label for="#">Email</label>
-                    <input type="text">
-
-                    <label for="#">Teléfono</label>
-                    <input type="text">
-
-                    <label for="#">Mensaje</label>
-                    <input type="text">
-
-                    <button>Enviar</button>
-                </form>
+                <form action="../send_mail.php" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                    <button type="submit">Enviar</button>
+                  </form>
             </div>
             <div class="barra"></div>
 

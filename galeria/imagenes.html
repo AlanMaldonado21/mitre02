@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósito Mitre - Inicio</title>
+    <!-- LINK BTS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- LINK FAVICON -->
+    <link rel="shortcut icon" href="img/Logo-dep-mitre-color.png" type="image/x-icon">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html"><img src="../img/Logo-dep-mitre-color.png" alt="logo mitre"></a>
+
+
+
+        <div class="bars__menu button">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="../index.html" class="a">Inicio</a></li>
+                <li class="li"><a href="../servicios/nuestros-servicios.html" class="a">Servicios</a></li>
+                <li class="li"><a href="#" class="a" id="productos">Productos</a>
+                    <ul id="submenu" class="hidden">
+                        <li><a href="../productos/laminado-en-caliente.html">Laminado en caliente</a></li>
+                        <li><a href="../productos/laminado-frio.html">Laminado en frio</a></li>
+                        <li><a href="../productos/galvanizada.html">Galvanizada</a></li>
+                        <li><a href="../productos/rayada.html">Rayada</a></li>
+                        <li><a href="../productos/antideslizante.html">Antideslizante</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../novedades/novedades.html" class="a">Novedades</a></li>
+                <li class="li"><a href="contacto.html" class="a">Contacto</a></li>
+                <li class="li bna">
+                    <img src="../img/icons8-billete-de-dinero-64.png" alt="">
+                    <a href="https://www.bna.com.ar/Personas">Dolar bna</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="dolar-nacion">
+            <img src="../img/icons8-billete-de-dinero-64.png" alt="">
+            <a href="https://www.bna.com.ar/Personas" target="_blank">Dolar bna</a>
+        </div>
+
+    </header>
+    <section class="carrousel ">
+        <div class="container-imagenes d-flex justify-between">
+            <video src="../img/galeria/video.mp4" class="w-25" controls></video>
+            <img src="../img/galeria/imagen-2.PNG" alt="imagen2" class="w-25">
+        </div>
+    </section>
+    <section class="contacto">
+
+        <div>
+            <h2>Contactanos</h2>
+            <form action="../send_mail.php" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="barra"></div>
+
+        <div class="contacto-derecho">
+            <div>
+                <img src="../img/email.png" alt="email logo">
+                <a href="#">compras@depositomitre.com.ar</a>
+            </div>
+            <div class="container-item">
+                <img src="../img/calendar.png" alt="calendar logo">
+                <div class="box">
+                    <p><strong>Horario de atención</strong></p>
+                    <p>8:00 a 12:00 - 13:00 a 17:00 hs.</p>
+                    <p>De Lunes a Viernes.</p>
+                </div>
+            </div>
+            <div class="container-item">
+                <img src="../img/wpp-orange.png" alt="logo wpp">
+                <div>
+                    <p>Whatsapp</p>
+                    <p><strong>Sucursal Alvear</strong></p>
+                    <ul>
+                        <li>
+                            11- 5457-8931
+                        </li>
+                    </ul>
+                    <p><strong>Sucursal Mitre</strong></p>
+                    <ul>
+                        <li>
+                            11-21564-740
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="box-4">
+                <img src="../img/phone-orange.png" alt="telfono naranja">
+                <div>
+                    <p>Teléfono</p>
+                    <p><strong>Sucursal Alvear</strong></p>
+                    <ul>
+                        <li>
+                            4757-610 / 5435-8090
+                        </li>
+                    </ul>
+                    <p><strong>Sucursal Mitre</strong></p>
+                    <ul>
+                        <li>
+                            4750-4819 / 5435-8069
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=541154578931&text=Hola!%20%C2%BFc%C3%B3mo%20est%C3%A1n%3F%20Vi%20su%20numero%20desde%20la%20web%20y%20quer%C3%ADa%20preguntarles%20acerca%20de%20..."
+                    class="button">Solicitar un asesor ahora</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6299.5615165216595!2d-58.54876652606839!3d-34.61561452256267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdeposito%20mitre!5e0!3m2!1sen!2sus!4v1728473803652!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="maps">
+
+        <div class="donde-estamos">
+            <div>
+
+                <div>
+                    <img src="../img/point.png" alt="point" class="">
+                    <h4><strong>Sucursal Alvear</strong> </h4>
+                    <p>Ventas por mayor y menor, cortes y planchado de bobina
+                    </p>
+                    <p>Av. Alvear 2518, Jose Ingenieros - Bs.As</p>
+                </div>
+
+                <div>
+                    <img src="../img/point.png" alt="point" class="">
+                    <h4><strong>Sucursal Mitre </strong></h4>
+                    <p>Cortes y plegados a medida
+                    </p>
+                    <p>Av. Mitre 3791, Caseros - Bs.As</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="../img/deposito-work.png" alt="hombres trabajando">
+            </div>
+    </section>
+
+
+
+    <div class="logos">
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=541154578931&text=Hola!%20%C2%BFc%C3%B3mo%20est%C3%A1n%3F%20Vi%20su%20numero%20desde%20la%20web%20y%20quer%C3%ADa%20preguntarles%20acerca%20de%20..."><img
+                src="../img/icons8-whatsapp-96.png" alt="logo wpp" class="logo-flotante-1"></a>
+        <a href="https://www.instagram.com/depositomitre/?hl=es-la"><img src="../img/icons8-instagram-96.png"
+                alt="logo ig" class="logo-flotante-2"></a>
+    </div>
+    <footer>
+        <div>
+            <img src="../img/icono-ig.png" alt="icono ig">
+            <img src="../img/icono-fb.png" alt="icono fb">
+            <img src="../img/icono-linkedin.png" alt="icono linkedin">
+        </div>
+        <p> Deposito mitre S.R.L 2024 todos los derechos reservados</p>
+        <div>
+            <a href="https://servicioscf.afip.gob.ar/publico/denuncias/denunciaCD.aspx" target="_blank"><img
+                    src="../img/fiscal.png" alt="data fiscal"></a>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

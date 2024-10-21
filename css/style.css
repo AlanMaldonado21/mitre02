@@ -135,24 +135,12 @@ h1, h2 {
   filter: brightness(60%);
 }
 
-/* Estilo para el contenedor */
-.zoom-container {
-  width: 300px;
-  height: 200px;
-  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
-  position: relative;
+.zoom-img {
+  transition: transform 8s ease-in-out;
 }
 
-/* Estilo para la imagen */
-.zoom-container img {
-  width: 100%;
-  height: 100%;
-  transition: transform 5s ease; /* La animación de zoom durará 5 segundos */
-}
-
-/* Zoom cuando el usuario pasa el mouse */
-.zoom-container:hover img {
-  transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
+.carousel-item.active .zoom-img {
+  transform: scale(1.05);
 }
 
 /* Ajustes específicos para mobile */
@@ -186,6 +174,12 @@ h1, h2 {
     font-size: 24px; /* Texto más grande en desktop */
   }
 }
+.hfive {
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px;
+}
+
 @media screen and (max-width: 768px) {
   .header .button {
     display: block;
@@ -204,7 +198,7 @@ h1, h2 {
   }
   .header .nav.activo {
     display: block;
-    height: 42vh;
+    height: 100vh;
     pointer-events: auto;
     margin-bottom: 25px;
   }
@@ -220,7 +214,7 @@ h1, h2 {
     text-align: start;
   }
   .header ul li {
-    margin: 7px !important;
+    margin: 15px 0 !important;
   }
   .header ul li a {
     color: white;
@@ -444,6 +438,7 @@ hr {
   width: 45px !important;
 }
 .maps .donde-estamos div:nth-child(2) {
+  padding: 0 25px;
   margin: 15px 0;
 }
 .maps .donde-estamos p {
@@ -477,7 +472,7 @@ hr {
     width: 45px !important;
   }
   .maps .donde-estamos div:nth-child(2) {
-    margin: 15px 0;
+    padding: 0 25px;
   }
   .maps .donde-estamos p {
     margin: 5px 0;
@@ -487,6 +482,7 @@ hr {
   border-top: 1.5px solid black;
   padding: 25px;
   color: #402B27 !important;
+  background-size: contain;
   background-image: url("../b-fotter.png");
 }
 .contacto h2 {
@@ -498,7 +494,12 @@ hr {
 }
 .contacto form input {
   border: 0;
-  padding: 5px;
+  padding: 10px;
+  background-color: rgb(247, 247, 234);
+}
+.contacto form #mensaje {
+  background-color: rgb(247, 247, 234);
+  border: 0px;
 }
 .contacto form label {
   margin: 5px !important;
@@ -544,7 +545,7 @@ nav ul li ul li a:hover {
   }
   /* Asegura que el submenú esté alineado correctamente bajo "Productos" */
   #submenu {
-    height: 90px;
+    height: 135px;
     top: 70px; /* Asegura que aparezca justo debajo del botón */
     left: 46%;
     width: 200px;
@@ -652,6 +653,17 @@ nav ul li ul li a:hover {
     margin-right: 55px;
     background-color: black;
     border: 1px solid black;
+  }
+}
+@media screen and (max-width: 510px) {
+  .container-imagenes {
+    flex-direction: column !important;
+  }
+  .container-imagenes img {
+    width: 100% !important;
+  }
+  .container-imagenes video {
+    width: 100% !important;
   }
 }
 footer {

@@ -41,6 +41,8 @@
                         <li><a href="laminado-en-caliente.html">Laminado en caliente</a></li>
                         <li><a href="laminado-frio.html">Laminado en frio</a></li>
                         <li><a href="galvanizada.html">Galvanizada</a></li>
+                        <li><a href="rayada.html">Rayada</a></li>
+                        <li><a href="antideslizante.html">Antideslizante</a></li>
                     </ul>
                 </li>
                 <li class="li"><a href="../novedades/novedades.html" class="a">Novedades</a></li>
@@ -69,13 +71,13 @@
             </div>
 
             <div class="grid-item i-3">
-                <p><strong>Ancho standard:</strong> 1000 y 1200.</p>
+                <p><strong>Ancho standard:</strong> 1000 y 1220.</p>
             </div>
             <div class="grid-item i-4">
                 <p><strong>Espesores:</strong> 0,30mm hasta 3,20 mm <br> <strong>Calidad:</strong> Comercial, Estructural (Hierro 1010)</p>
             </div>
             <div class="grid-item i-5">
-                <p><strong>Largo standard:</strong> 2000 y 2440 <br> <strong>Largos especiales:</strong> Conforme
+                <p><strong>Largo standard:</strong> 2000, 2440 y 3000 <br> <strong>Largos especiales:</strong> Conforme
                     a los requerimientos del cliente</p>
 
             </div>
@@ -96,7 +98,7 @@
                 <img src="../img/logo-ternium.png" alt="">
             </div>
             <div>
-                <h1>Galvanizada</h1>
+                <h1>Galvanizada</h1> 
             </div>
             <div class="botones">
                 <a href="https://api.whatsapp.com/send?phone=541154578931&text=Hola!%20%C2%BFc%C3%B3mo%20est%C3%A1n%3F%20Vi%20su%20numero%20desde%20la%20web%20y%20quer%C3%ADa%20preguntarles%20acerca%20de%20...">Solicitar una Cotización</a>
@@ -104,13 +106,13 @@
             </div>
             <div class="line"></div>
             <div class="especificaciones">
-                <p><strong>Ancho standard:</strong>  1000 y 1200.</p>
+                <p><strong>Ancho standard:</strong>  1000 y 1220.</p>
             </div>
             <div>
                 <p><strong>Espesores:</strong> 0,30mm hasta 3,20 mm <br> <strong>Calidad:</strong> Comercial, Estructural (Hierro 1010)</p>
             </div>
             <div>
-                <p><strong>Largo standard:</strong> 2000 y 2440 <br> <strong>Largos especiales:</strong> Conforme
+                <p><strong>Largo standard:</strong>2000, 2440 y 3000 <br> <strong>Largos especiales:</strong> Conforme
                     a los requerimientos del cliente</p>
 
             </div>
@@ -129,13 +131,13 @@
         </section>
 
         <section class="productos-relacionados">
-            <h2>Productos relacionados</h2>
+            <h2>Productos Relacionados</h2>
             <div class="cards-desta" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card">
                     <div>
                         <img src="../img/productos/HojaEntera.jpg" alt="logo camion">
                     </div>
-                    <h2>Laminado caliente</h2>
+                    <h2>Laminado Caliente</h2>
                     <p> Se utiliza en estructuras de construcción, tuberías, rieles y piezas automotrices, donde no se
                         requiere alta precisión en las dimensiones.</p>
                     <div>
@@ -148,7 +150,7 @@
                     <div>
                         <img src="../img/productos/frio.png" alt="logo cx">
                     </div>
-                    <h2>Laminado en frio</h2>
+                    <h2>Laminado en Frío</h2>
                     <p>El laminado en frío del acero aumenta su resistencia y precisión, proporcionando un acabado más liso y uniforme.
                     </p>
                     <div>
@@ -212,23 +214,26 @@
 
             <div class="donde-estamos">
                 <div>
-                    <img src="../img/point.png" alt="point" class="point">
+                    
                     <div>
+                        <img src="../img/point.png" alt="point" class="">
                         <h4><strong>Sucursal Alvear</strong> </h4>
                         <p>Ventas por mayor y menor, cortes y planchado de bobina
                         </p>
                         <p>Av. Alvear 2518, Jose Ingenieros - Bs.As</p>
                     </div>
+                    
                     <div>
+                        <img src="../img/point.png" alt="point" class="">
                         <h4><strong>Sucursal Mitre </strong></h4>
                         <p>Cortes y plegados a medida
                         </p>
                         <p>Av. Mitre 3791, Caseros - Bs.As</p>
                     </div>
                 </div>
-
+    
                 <div>
-                    <img src="../img/fotos-m-agua/4.png" alt="hombres trabajando">
+                    <img src="../img/deposito-work.png" alt="hombres trabajando">
                 </div>
         </section>
 
@@ -237,24 +242,24 @@
 
             <div>
                 <h2>Contactanos</h2>
-                <form action="#">
-                    <label for="#">Nombre</label>
-                    <input type="text">
-
-                    <label for="#">Apellido</label>
-                    <input type="text">
-
-                    <label for="#">Email</label>
-                    <input type="text">
-
-                    <label for="#">Teléfono</label>
-                    <input type="text">
-
-                    <label for="#">Mensaje</label>
-                    <input type="text">
-
-                    <button>Enviar</button>
-                </form>
+                <form action="../send_mail.php" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                    <button type="submit">Enviar</button>
+                  </form>
             </div>
             <div class="barra"></div>
 

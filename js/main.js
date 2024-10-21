@@ -41,3 +41,14 @@ productosBtn.addEventListener('click', function(e) {
     // Alterna la clase 'hidden' para mostrar/ocultar el submenú
     submenu.classList.toggle('hidden');
 });
+document.querySelector('form').addEventListener('submit', function (e) {
+    const email = document.querySelector('input[name="email"]').value;
+    const nombre = document.querySelector('input[name="nombre"]').value;
+    const mensaje = document.querySelector('textarea[name="mensaje"]').value;
+  
+    if (!email || !nombre || !mensaje) {
+      e.preventDefault();
+      alert("Por favor, completa todos los campos obligatorios.");
+    }
+  });
+  

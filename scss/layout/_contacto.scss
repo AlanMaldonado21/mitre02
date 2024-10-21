@@ -2,6 +2,7 @@
     border-top: 1.5px solid black;
     padding: 25px;
     color: #402B27 !important;
+    background-size:contain ;
     background-image: url("../b-fotter.png");
 
     h2 {
@@ -13,7 +14,14 @@
         flex-direction: column;
         input {
             border: 0;
-            padding: 5px;
+            padding: 10px;
+            background-color: rgb(247, 247, 234);
+            
+        }
+        #mensaje{
+            background-color: rgb(247, 247, 234);
+            border: 0px;
+            
         }
 
         label {
@@ -66,7 +74,7 @@
 
     /* Asegura que el submenú esté alineado correctamente bajo "Productos" */
     #submenu {
-        height: 90px;
+        height: 135px;
         top: 70px; /* Asegura que aparezca justo debajo del botón */
         left: 46%;
         width: 200px;
@@ -199,4 +207,16 @@
         }
     }
 
+}
+
+@media screen and (max-width:510px){
+    .container-imagenes{
+        flex-direction: column !important;
+        img{
+            width: 100% !important;
+        }
+        video{
+            width: 100% !important;
+        }
+    }
 }

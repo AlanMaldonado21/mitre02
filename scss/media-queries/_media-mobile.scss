@@ -18,7 +18,7 @@
     }
     .header .nav.activo{
       display: block; 
-      height: 42vh;
+      height: 100vh;
       pointer-events: auto;
       margin-bottom: 25px;
     }
@@ -35,7 +35,7 @@
       ul{
         text-align: start;
         li{
-          margin: 7px !important;
+          margin: 15px 0 !important;
           a{
             color: white;
             text-decoration: none;
