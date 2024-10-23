@@ -70,8 +70,16 @@
   @media (min-width: 1024px) {
     .li {
         display: inline-block;
+        
     }
+      
 
+    .hfive{ 
+        z-index: 0;
+        color: beige;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 1.4rem !important;
+      }
     /* Asegura que el submenú esté alineado correctamente bajo "Productos" */
     #submenu {
         height: 135px;
