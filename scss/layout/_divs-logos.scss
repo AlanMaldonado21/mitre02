@@ -6,6 +6,7 @@
         right: 25px;
         width: 60px;
         transition: 2s;
+        z-index: 10;
         &:hover{
             transform: rotate(360deg);
         }
