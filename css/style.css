@@ -356,7 +356,7 @@ hr {
   -webkit-box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
   -moz-box-shadow: 6px 9px 29px -5px rgba(64, 43, 39, 0.75);
   width: 275px;
-  height: 300px;
+  height: 320px;
   margin: auto;
 }
 .cards .card p {
@@ -453,6 +453,39 @@ hr {
 .maps div img {
   width: 100%;
 }
+.maps .maps-01 {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  /* Pseudo-elemento para la imagen de fondo */
+}
+.maps .maps-01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/banners/imgternium.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(40%);
+  z-index: 1; /* Mantener el filtro detrás del contenido */
+}
+.maps .maps-01 .calidad-ternium {
+  position: relative;
+  z-index: 2; /* Para que el texto quede por encima del fondo */
+  padding-top: 130px;
+  margin-left: 25px;
+}
+.maps .maps-01 .calidad-ternium h5 {
+  font-size: 2.5rem;
+  color: white;
+  font-size: 2.5rem;
+}
+.maps .maps-01 .calidad-ternium p {
+  color: white;
+}
 
 @media screen and (min-width: 1024px) {
   .maps iframe {
@@ -489,7 +522,7 @@ hr {
   padding: 25px;
   color: #402B27 !important;
   background-size: contain;
-  background-image: url("../b-fotter.png");
+  background-image: url("../img/b-fotter.png");
 }
 .contacto h2 {
   color: #402B27;

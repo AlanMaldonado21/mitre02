@@ -1,44 +1,88 @@
 .maps {
-    iframe{
+    iframe {
         padding: 15px;
         background-color: #F5751F;
         border: 1px solid black;
         width: 100%;
         height: 300px !important;
     }
-    .donde-estamos{
+
+    .donde-estamos {
         color: #402B27;
-        margin: 15px 35px ;
+        margin: 15px 35px;
         display: flex;
         flex-direction: column;
-        div:first-child{
+
+        div:first-child {
             padding: 0 25px;
-            img{
+
+            img {
                 position: absolute;
-                left: 15px ;
+                left: 15px;
                 width: 45px !important;
             }
         }
-        div:nth-child(2){
+
+        div:nth-child(2) {
             padding: 0 25px;
 
             margin: 15px 0;
         }
-        p{
+
+        p {
             margin: 5px 0;
         }
-       
+
     }
 
-    div img{
+    div img {
         width: 100%;
+
     }
+    .maps-01 {
+        position: relative;
+        height: 350px;
+        overflow: hidden;
+        
+        /* Pseudo-elemento para la imagen de fondo */
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../img/banners/imgternium.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: brightness(40%);
+            z-index: 1; /* Mantener el filtro detrás del contenido */
+        }
+    
+        .calidad-ternium {
+            position: relative;
+            z-index: 2; /* Para que el texto quede por encima del fondo */
+            padding-top: 130px;
+            margin-left: 25px;
+    
+            h5 {
+                font-size: 2.5rem;
+                color: white;
+                font-size: 2.5rem;
+            }
+    
+            p {
+                color: white;
+            }
+        }
+    }
+
 }
 
-@media screen and (min-width: 1024px){
-    .maps{
-       
-        iframe{
+@media screen and (min-width: 1024px) {
+    .maps {
+
+        iframe {
             padding: 0;
             height: 380px;
             border-top: 4px solid #F5751F;
@@ -46,29 +90,32 @@
             background-color: #F9EAD6;
         }
 
-        .donde-estamos{
+        .donde-estamos {
             color: #402B27;
-            margin: 15px 35px ;
+            margin: 15px 35px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            div:first-child{
+
+            div:first-child {
                 padding: 0 25px;
 
-                img{
+                img {
                     position: absolute;
-                    left: 45px ;
+                    left: 45px;
                     width: 45px !important;
                 }
             }
-            div:nth-child(2){
+
+            div:nth-child(2) {
                 padding: 0 25px;
 
             }
-            p{
+
+            p {
                 margin: 5px 0;
             }
-           
+
         }
     }
 }
