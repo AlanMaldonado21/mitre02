@@ -1033,6 +1033,7 @@ footer p {
   align-self: center;
 }
 .nosotros-flex div:nth-child(2) h6 {
+  font-size: 1.1rem;
   margin-bottom: 15px;
   font-weight: bold;
   text-align: center;
@@ -1060,6 +1061,7 @@ footer p {
   align-self: center;
 }
 .nosotros-flex .left h6 {
+  font-size: 1.1rem;
   text-align: center;
   font-weight: bold;
 }
