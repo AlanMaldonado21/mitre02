@@ -41,7 +41,7 @@
     }
     .maps-01 {
         position: relative;
-        height: 350px;
+        height: 480px;
         overflow: hidden;
         
         /* Pseudo-elemento para la imagen de fondo */
@@ -79,7 +79,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     .maps {
 
         iframe {
@@ -119,4 +119,3 @@
         }
     }
 }
-
